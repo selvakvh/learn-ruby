@@ -1,10 +1,9 @@
 def sandwich
-    puts "top"
-    yield
-    puts "bottom"
+  puts 'top'
+  yield
+  puts 'bottom'
 end
 
 sandwich do
-    puts "lettuce and tomotto"
+  puts 'lettuce and tomotto'
 end
-
