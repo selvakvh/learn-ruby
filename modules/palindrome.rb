@@ -2,16 +2,17 @@ module Palindrome
   def palindrome?
     processed_content == processed_content.reverse
   end
-end
-
-class String
-  include Palindrome
 
   private
 
   def processed_content
-    downcase
+    to_s.downcase
   end
+
+end
+
+class String
+  include Palindrome
 end
 
 p(
@@ -20,12 +21,6 @@ p(
 
 class Integer
   include Palindrome
-
-  private
-
-  def processed_content
-    to_s
-  end
 end
 
 p(
