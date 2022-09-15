@@ -6,6 +6,9 @@ end
 
 class String
   include Palindrome
+
+  private
+
   def processed_content
     downcase
   end
@@ -17,6 +20,9 @@ p(
 
 class Integer
   include Palindrome
+
+  private
+
   def processed_content
     to_s
   end
