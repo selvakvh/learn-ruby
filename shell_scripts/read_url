@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+require 'open-uri'
+
+module Palindrome
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  def processed_content
+    to_s.downcase.scan(/[a-z]/)
+  end
+end
+
+class String
+  include Palindrome
+end
+
+class Integer
+  include Palindrome
+end
+
+lines = URI.open('https://cdn.learnenough.com/phrases.txt').readlines
+lines.each {|line| puts line if line.palindrome?}
+
+# p = lines.select(&:palindrome?)
+
+# File.write('palindroms.txt', p.join)

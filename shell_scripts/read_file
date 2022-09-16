@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+module Palindrome
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  def processed_content
+    to_s.downcase.scan(/[a-z]/)
+  end
+end
+
+class String
+  include Palindrome
+end
+
+class Integer
+  include Palindrome
+end
+
+lines = File.readlines('phrases.txt')
+# lines.each {|line| puts line if line.palindrome?}
+
+p = lines.select(&:palindrome?)
+
+File.write('palindroms.txt', p.join)
