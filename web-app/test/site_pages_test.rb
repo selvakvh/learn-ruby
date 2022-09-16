@@ -10,5 +10,6 @@ class PalindromAppTest < Minitest::Test
   def test_index
     get '/'
     assert last_response.ok?
+    assert doc(last_response).at_css('h1')
   end
 end
