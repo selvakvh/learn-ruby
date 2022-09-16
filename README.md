@@ -1,2 +1,3 @@
 # learn-ruby
-<a href="https://www.learnenough.com/certificates/d49cc82b"><img src="https://www.learnenough.com/certificates/d49cc82b/ruby-tutorial.svg" alt="Certificate of Completion for Learn Enough Ruby"></a>
+[Certificate](https://www.learnenough.com/certificates/SelvarasuRamasamy) of Completion for Learn Enough Ruby
+<a href="https://www.learnenough.com/certificates/SelvarasuRamasamy"><img src="https://www.learnenough.com/certificates/SelvarasuRamasamy/ruby-tutorial.svg" alt="Certificate of Completion for Learn Enough Ruby"></a>
