@@ -1,1 +1,2 @@
 # learn-ruby
+<a href="https://www.learnenough.com/certificates/d49cc82b"><img src="https://www.learnenough.com/certificates/d49cc82b/ruby-tutorial.svg" alt="Certificate of Completion for Learn Enough Ruby"></a>
